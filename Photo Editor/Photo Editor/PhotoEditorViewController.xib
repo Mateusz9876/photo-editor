@@ -167,12 +167,12 @@
                             </subviews>
                         </stackView>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-y4-Jwh">
-                            <rect key="frame" x="324" y="14" width="51" height="32"/>
+                            <rect key="frame" x="331" y="14" width="38" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <viewLayoutGuide key="safeArea" id="NGM-P0-r7T"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                             <size key="titleShadowOffset" width="1" height="0.0"/>
-                            <state key="normal" title="Zapisz">
+                            <state key="normal" title="done">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
