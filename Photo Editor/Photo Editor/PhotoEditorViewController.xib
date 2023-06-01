@@ -78,11 +78,25 @@
                         <constraint firstAttribute="height" constant="60" id="SZk-dl-fAI"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MS-N5-3xY">
-                    <rect key="frame" x="0.0" y="-20" width="375" height="60"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MS-N5-3xY">
+                    <rect key="frame" x="0.0" y="-20" width="375" height="66"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-2Z-r5q">
-                            <rect key="frame" x="117" y="0.0" width="246" height="60"/>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-y4-Jwh">
+                            <rect key="frame" x="299" y="22" width="76" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <viewLayoutGuide key="safeArea" id="NGM-P0-r7T"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <size key="titleShadowOffset" width="1" height="0.0"/>
+                            <state key="normal" title="Zatwierdź">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="-1" eventType="touchUpInside" id="Nk8-0N-Id9"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-2Z-r5q">
+                            <rect key="frame" x="0.0" y="8" width="246" height="60"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-LJ-SyD">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
@@ -233,19 +247,6 @@
                         <constraint firstItem="ZRl-89-gRO" firstAttribute="leading" secondItem="87h-1G-t5q" secondAttribute="leading" constant="12" id="mn5-Hu-M5A"/>
                     </constraints>
                 </view>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-y4-Jwh">
-                    <rect key="frame" x="323" y="-8" width="40" height="32"/>
-                    <viewLayoutGuide key="safeArea" id="NGM-P0-r7T"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                    <size key="titleShadowOffset" width="1" height="0.0"/>
-                    <state key="normal" title="Done">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="doneButtonTapped:" destination="-1" eventType="touchUpInside" id="Nk8-0N-Id9"/>
-                    </connections>
-                </button>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-sK-1nK">
                     <rect key="frame" x="162.5" y="605" width="50" height="50"/>
                     <subviews>
@@ -299,7 +300,6 @@
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="87h-1G-t5q" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="0ft-JY-szV"/>
-                <constraint firstItem="KxU-y4-Jwh" firstAttribute="top" secondItem="Zfb-jk-lQO" secondAttribute="top" constant="-8" id="1QI-yc-Gke"/>
                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="centerX" secondItem="HPk-Bg-V0q" secondAttribute="centerX" id="24Z-2f-Tyk"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="2tC-2e-oA6"/>
                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="6eK-mF-0OL"/>
@@ -310,7 +310,6 @@
                 <constraint firstItem="yAt-sK-1nK" firstAttribute="centerX" secondItem="HPk-Bg-V0q" secondAttribute="centerX" id="Viz-8c-pzk"/>
                 <constraint firstAttribute="bottom" secondItem="87h-1G-t5q" secondAttribute="bottom" id="XH4-oO-47L"/>
                 <constraint firstItem="ZGa-1B-gkO" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="YYk-Vg-obo"/>
-                <constraint firstItem="Zfb-jk-lQO" firstAttribute="trailing" secondItem="KxU-y4-Jwh" secondAttribute="trailing" constant="12" id="Z0h-d5-J2Z"/>
                 <constraint firstAttribute="trailing" secondItem="Cy8-ap-fH9" secondAttribute="trailing" id="dlF-iN-Gjg"/>
                 <constraint firstAttribute="trailing" secondItem="S1Y-ZS-dct" secondAttribute="trailing" id="jwU-EC-jaR"/>
                 <constraint firstAttribute="trailing" secondItem="87h-1G-t5q" secondAttribute="trailing" id="kaD-bR-ZZt"/>
